@@ -99,10 +99,7 @@
     <script>
         function start() {
             var audio = document.getElementById('homeAudio');
-            audio.play().catch(error => {
-                console.log('播放失敗：', error);
-                alert('音頻播放失敗，請檢查音量或瀏覽器設定。');
-            }); 
+            audio.play();
             hidePopup();
         }
 
@@ -139,9 +136,7 @@
             // Play the target audio
             if (audioId) {
                 var audio = document.getElementById(audioId);
-                audio.play().catch(error => {
-                    console.log('播放失敗：', error);
-                });
+                audio.play();
             }
         }
     </script>
