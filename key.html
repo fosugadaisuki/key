@@ -160,7 +160,7 @@
         }
 
         function navigateToPreviousPage() {
-            var pages = ['home', 'p1', 'p2', 'p3', 'p4', 'p5'];
+            var pages = ['home', 'p1', 'p2', 'p3', 'p4', 'p5','p6'];
             var currentIndex = pages.indexOf(currentPage);
             if (currentIndex > 0) {
                 var previousPage = pages[currentIndex - 1];
@@ -169,7 +169,7 @@
         }
 
         function navigateToNextPage() {
-            var pages = ['home', 'p1', 'p2', 'p3', 'p4', 'p5'];
+            var pages = ['home', 'p1', 'p2', 'p3', 'p4', 'p5','p6'];
             var currentIndex = pages.indexOf(currentPage);
             if (currentIndex < pages.length - 1) {
                 var nextPage = pages[currentIndex + 1];
@@ -206,7 +206,9 @@
     <audio id="p5Audio">
         <source src="sound/天使降臨.mp3" type="audio/mpeg">
     </audio>
-
+    <audio id="p6Audio">
+        <source src="" type="audio/mpeg">
+    </audio>
     
     <div id="home" class="content">
         <div id="top1"></div>
@@ -231,6 +233,10 @@
     <div id="p5" class="content hidden">
         <div id="top2"></div>
         <img src="comics_key/key5.jpg" alt="Comic Strip 5" class="small-image">
+    </div>
+    <div id="p6" class="content hidden">
+        <div id="top2"></div>
+        <img src="comics_key/S__52617265.jpg" alt="Comic Strip 6" class="small-image">
     </div>
 </body>
 </html>
